@@ -1,0 +1,333 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ 
+ 
+ /*=========================
+    tabs
+ 
+    */
+    .mwb_woz_btn
+    {
+       background-color: #e14d43;
+       color: white;
+       border: 2px solid #e14d43;
+   }
+   
+.mwb_woz_left_section
+{
+    float:left;
+    width: 180px;
+}
+.mwb_woz_right_section {
+    float: left;
+    border: 1px solid #ccc;
+    margin-left: 1%;
+    width: calc(100% - 225px);
+    margin-right: 1%;
+}
+.mwb_woz_section
+{
+    overflow: hidden;
+    margin-top: 10px;
+}
+.mwb_woz_left_section li
+{
+    list-style: none;
+}
+
+.mwb_woz_section_link
+{
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color:black;
+    border: 1px solid #ccc;
+    background-color: white;
+    display:block !important;
+}
+.mwb_woz_section_link.mwb_woz_section_link_active::after {
+    position: absolute;
+    content: "";
+    right: 14px;
+    height: 2px;
+    width: 10px;
+    background: #ffffff;
+    transform: rotate(44deg);
+    top: 15px;
+}
+
+.mwb_woz_section_link.mwb_woz_section_link_active::before {
+    position: absolute;
+    content: "";
+    right: 14px;
+    background: #ffffff;
+    height: 2px;
+    width: 10px;
+    bottom: 15px;
+    transform: rotate(-34deg);
+}
+.mwb_woz_section_link:hover
+{
+    color:gray;
+}
+.mwb_woz_section_link_active {
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #e14d43;
+    display: block !important;
+    position: relative;
+}
+.mwb_woz_heading {
+
+    font-size: 24px;
+    border: 1px solid #ccc;
+    width: 94%;
+    font-weight: 100 !important;
+    padding: 20px;
+    background: #ffffff;
+}
+.mwb_woz_section_link_active:hover
+{
+    color:white;
+}
+
+
+
+/* ============================*/
+body {
+    margin: 0;
+}
+.mwb-offer_woz, .mwb-offer_woz * {
+    box-sizing: border-box;
+}
+.mwb-offer_woz__main-btn {
+    background: #ffffff;
+    border: 1px solid #fff;
+    border-radius: 0;
+    color: #fa6d29;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: unset;
+}
+.mwb-offer_woz {
+    font-family: 'Roboto', sans-serif;
+  /*  margin: 0 auto;
+    max-width: 1100px;
+    padding: 24px 0;
+    width: 100%;*/
+    margin: 0 !important;
+}
+.mwb-offer_woz img {
+    display: block;
+    max-width: 100%;
+}
+.mwb-offer_woz__row:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.mwb-offer_woz__col {
+    float: left;
+    padding: 15px;
+}
+.mwb-offer_woz__row.mwb-offer_woz__row--large .mwb-offer_woz__col {
+    width: 50%;
+}
+.mwb-offer_woz-100 {
+    width: 100% !important;
+}
+.mwb-offer_woz__row .mwb-offer_woz__col {
+    /*width: 33.333%;*/
+    display: inline-block;
+}
+.mwb-offer_woz__img-wrap > .mwb-offer_woz__img-link {
+    display: block;
+    position: relative;
+}
+.mwb-offer_woz__img-wrap:hover > .mwb-offer_woz__img-link::after {
+    bottom: 20px;
+    left: 20px;
+    /*opacity: 1;*/
+    right: 20px;
+    top: 20px;
+}
+.mwb-offer_woz__img-wrap {
+    backface-visibility: hidden;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    /*-moz-osx-font-smoothing: grayscale;*/
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.mwb-offer_woz__img-wrap:before {
+    background-color: rgba(222, 79, 11, 0.75);
+    /* background: -webkit-linear-gradient(to top, rgba(37, 92, 218, 0.8), rgba(95, 107, 255, 0.63));  Chrome 10-25, Safari 5.1-6
+    background: linear-gradient(to top, rgba(37, 92, 218, 0.8), rgba(95, 107, 255, 0.63)); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    bottom: 50%;
+    box-sizing: border-box;
+    content: "";
+    left: -35%;
+    position: absolute;
+    right: -35%;
+    top: 50%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition-delay: 0.105s;
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    -moz-transition-delay: 0.105s;
+    transition-delay: 0.105s;
+    z-index: 5;
+}
+.mwb-offer_woz__description {
+    /* bottom: 0; */
+    color: #ffffff;
+    left: 0;
+    opacity: 0;
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 15;
+}
+
+.mwb-offer_woz__col:hover .mwb-offer_woz__img-wrap:before {
+    top: -55%;
+    transition-delay: 0s;
+    bottom: -55%;
+    left: -55%;
+    right: -55%;
+}
+.mwb-offer_woz__col:hover .mwb-offer_woz__description {
+    opacity: 1;
+}
+.mwb-offer_woz__description p {
+    line-height: 25px;
+    margin: 0;
+}
+.mwb-offer_woz__description .mwb-offer_woz__pro-detail {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.mwb-offer_woz__pro-btn {
+    margin-top: 30px;
+}
+.mwb-offer_woz__col:hover img {
+    filter: blur(.5px);
+}
+.mwb-offer_woz__large-head {
+    position: absolute;
+    top: 0;
+    padding: 10px 25px;
+    background: #1BA8E0;
+    color: #fff;
+    transition: 0.3s linear all;
+    z-index: 55;
+}
+.mwb-offer_woz__large-head h2{
+    margin: 0;
+}
+.mwb-offer_woz__col:hover .mwb-offer_woz__large-head {
+    opacity: 0;
+}
+.mwb-offer_woz__pro-detail.mwb-offer_woz__pro-detail--small {
+    font-size: 30px;
+}
+.mwb-offer_woz-gridSizer {
+    width: 50%;
+}
+.mwb-offer_woz__row.mwb-offer_woz__row--large {
+    width: 100% !important;
+}
+.mwb_woz_right_section #tab-1 {
+    margin-left: 0 !important;
+    padding-left: 30px !important;
+}
+.mwb_woz_right_section input[type="checkbox"]{
+    width: 14px;
+    height: 14px;
+}
+/*======================================
+=            Responsive CSS            =
+======================================*/
+@media screen and (max-width: 991px) {
+    .mwb-offer_woz__row.mwb-offer_woz__row--large .mwb-offer_woz__col {
+        width: 100%;
+    }
+    .mwb-offer_woz__row .mwb-offer_woz__col {
+        width: 50%;
+    }
+    .mwb-offer_woz img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .mwb-offer_woz__row .mwb-offer_woz__col {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .mwb_woz_right_section{
+        width: 94%;
+        margin: 0 auto;
+    }
+    .mwb_woz_left_section {
+        float: none;
+        width: 180px;
+        margin: 0 auto 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .mwb-offer_woz__description p {
+        display: none;
+    }
+    .mwb-offer_woz__description .mwb-offer_woz__pro-detail {
+        font-size: 21px;
+        margin-bottom: 0 !important;
+    }
+    .mwb-offer_woz__main-btn {
+        font-size: 10px;
+        padding: 6px 18px;
+    }
+    .mwb-offer_woz__pro-btn{
+        margin-top: 10px;
+    }
+    .mwb_woz_heading {
+        font-size: 19px;
+        width: auto;
+        font-weight: bold;
+        padding: 12px;
+        margin-right: 15px;
+        text-align: center;
+    }
+    .mwb_woz_left_section {
+        float: none;
+        margin: auto !important;
+    }
+    .mwb_woz_right_section #tab-1 {
+        padding-left: 10px !important;
+    }
+}
+
+/*=====  End of Responsive CSS  ======*/
